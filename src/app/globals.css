@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.regular-64 {
+  @apply text-[64px] font-[400] leading-[120%];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.regular-40 {
+  @apply text-[40px] font-[400] leading-[120%];
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.regular-32 {
+  @apply text-[32px] font-[400];
+}
+
+.regular-24 {
+  @apply text-[24px] font-[400];
+}
+
+.regular-20 {
+  @apply text-[20px] font-[400];
+}
+
+.regular-18 {
+  @apply text-[18px] font-[400];
+}
+
+.regular-16 {
+  @apply text-[16px] font-[400];
+}
+
+.regular-14 {
+  @apply text-[14px] font-[400];
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
